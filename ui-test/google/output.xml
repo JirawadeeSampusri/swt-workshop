@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.7.4 on darwin)" generated="20201106 11:14:54.895" rpa="false">
+<suite id="s1" name="Google-G1" source="/Users/mac/Desktop/swt-workshop/ui-test/google/google-g1.robot">
+<test id="s1-t1" name="Test search keyword and verify search result on Google">
+<kw name="พิมพ์ google.com">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>https://www.google.com</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20201106 11:14:55.084" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com'.</msg>
+<status status="PASS" starttime="20201106 11:14:55.084" endtime="20201106 11:15:02.876"></status>
+</kw>
+<status status="PASS" starttime="20201106 11:14:55.083" endtime="20201106 11:15:02.877"></status>
+</kw>
+<kw name="พิมพ์คำค้น USElection202">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name:q</arg>
+<arg>USElection2020</arg>
+</arguments>
+<msg timestamp="20201106 11:15:02.879" level="INFO">Typing text 'USElection2020' into text field 'name:q'.</msg>
+<status status="PASS" starttime="20201106 11:15:02.878" endtime="20201106 11:15:03.074"></status>
+</kw>
+<status status="PASS" starttime="20201106 11:15:02.877" endtime="20201106 11:15:03.074"></status>
+</kw>
+<kw name="กด Enter">
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>name:q</arg>
+<arg>RETURN</arg>
+</arguments>
+<msg timestamp="20201106 11:15:03.076" level="INFO">Sending key(s) ('RETURN',) to name:q element.</msg>
+<msg timestamp="20201106 11:15:03.367" level="INFO">Pressing special key RETURN to element.</msg>
+<msg timestamp="20201106 11:15:03.367" level="INFO">Releasing special key RETURN.</msg>
+<status status="PASS" starttime="20201106 11:15:03.075" endtime="20201106 11:15:04.280"></status>
+</kw>
+<status status="PASS" starttime="20201106 11:15:03.074" endtime="20201106 11:15:04.280"></status>
+</kw>
+<kw name="ตรวจสอบ US Election 2020 - BBC News">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>US Election 2020 - BBC News</arg>
+</arguments>
+<msg timestamp="20201106 11:15:04.326" level="INFO">Current page contains text 'US Election 2020 - BBC News'.</msg>
+<status status="PASS" starttime="20201106 11:15:04.281" endtime="20201106 11:15:04.327"></status>
+</kw>
+<status status="PASS" starttime="20201106 11:15:04.280" endtime="20201106 11:15:04.327"></status>
+</kw>
+<status status="PASS" starttime="20201106 11:14:55.082" endtime="20201106 11:15:04.327" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20201106 11:14:54.897" endtime="20201106 11:15:04.331"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Google-G1">Google-G1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

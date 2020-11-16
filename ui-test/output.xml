@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.7.4 on darwin)" generated="20201106 11:09:02.437" rpa="false">
+<suite id="s1" name="Google-G1" source="/Users/mac/Desktop/swt-workshop/ui-test/google-g1.robot">
+<test id="s1-t1" name="Test search keyword and verify search result on Google">
+<kw name="พิมพ์ google.com">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>https://www.shoppee.co.th</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20201106 11:09:02.675" level="INFO">Opening browser 'chrome' to base url 'https://www.shoppee.co.th'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20201106 11:09:06.335" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20201106 11:09:05.917" endtime="20201106 11:09:06.335"></status>
+</kw>
+<msg timestamp="20201106 11:09:06.346" level="FAIL">WebDriverException: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=86.0.4240.183)
+</msg>
+<status status="FAIL" starttime="20201106 11:09:02.675" endtime="20201106 11:09:06.347"></status>
+</kw>
+<status status="FAIL" starttime="20201106 11:09:02.675" endtime="20201106 11:09:06.347"></status>
+</kw>
+<status status="FAIL" starttime="20201106 11:09:02.674" endtime="20201106 11:09:06.348" critical="yes">WebDriverException: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=86.0.4240.183)
+</status>
+</test>
+<status status="FAIL" starttime="20201106 11:09:02.441" endtime="20201106 11:09:06.349"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" id="s1" name="Google-G1">Google-G1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
